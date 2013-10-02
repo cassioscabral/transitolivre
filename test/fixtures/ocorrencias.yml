@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ocolocal: 1
+  ocostatus: MyString
+  ocomunicipio: MyString
+  ocosentido: MyString
+  ocodataocorrencia: 2013-10-01
+  ocodataregistro: 2013-10-01
+  ocotipo: MyString
+  ococomid: 1
+  ocoidorigem: 1
+  ococpfretif: MyString
+  ococpfretif: 2013-10-01
+
+two:
+  ocolocal: 1
+  ocostatus: MyString
+  ocomunicipio: MyString
+  ocosentido: MyString
+  ocodataocorrencia: 2013-10-01
+  ocodataregistro: 2013-10-01
+  ocotipo: MyString
+  ococomid: 1
+  ocoidorigem: 1
+  ococpfretif: MyString
+  ococpfretif: 2013-10-01

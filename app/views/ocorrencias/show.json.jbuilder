@@ -1,0 +1,1 @@
+json.extract! @ocorrencia, :ocolocal, :ocostatus, :ocomunicipio, :ocosentido, :ocodataocorrencia, :ocodataregistro, :ocotipo, :ococomid, :ocoidorigem, :ococpfretif, :ococpfretif, :created_at, :updated_at

@@ -1,0 +1,47 @@
+<h1>Listing ocorrencias</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ocolocal</th>
+      <th>Ocostatus</th>
+      <th>Ocomunicipio</th>
+      <th>Ocosentido</th>
+      <th>Ocodataocorrencia</th>
+      <th>Ocodataregistro</th>
+      <th>Ocotipo</th>
+      <th>Ococomid</th>
+      <th>Ocoidorigem</th>
+      <th>Ococpfretif</th>
+      <th>Ococpfretif</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ocorrencias.each do |ocorrencia| %>
+      <tr>
+        <td><%= ocorrencia.ocolocal %></td>
+        <td><%= ocorrencia.ocostatus %></td>
+        <td><%= ocorrencia.ocomunicipio %></td>
+        <td><%= ocorrencia.ocosentido %></td>
+        <td><%= ocorrencia.ocodataocorrencia %></td>
+        <td><%= ocorrencia.ocodataregistro %></td>
+        <td><%= ocorrencia.ocotipo %></td>
+        <td><%= ocorrencia.ococomid %></td>
+        <td><%= ocorrencia.ocoidorigem %></td>
+        <td><%= ocorrencia.ococpfretif %></td>
+        <td><%= ocorrencia.ococpfretif %></td>
+        <td><%= link_to 'Show', ocorrencia %></td>
+        <td><%= link_to 'Edit', edit_ocorrencia_path(ocorrencia) %></td>
+        <td><%= link_to 'Destroy', ocorrencia, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ocorrencia', new_ocorrencia_path %>

@@ -1,0 +1,61 @@
+<%= form_for(@ocorrencia) do |f| %>
+  <% if @ocorrencia.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ocorrencia.errors.count, "error") %> prohibited this ocorrencia from being saved:</h2>
+
+      <ul>
+      <% @ocorrencia.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ocolocal %><br>
+    <%= f.number_field :ocolocal %>
+  </div>
+  <div class="field">
+    <%= f.label :ocostatus %><br>
+    <%= f.text_field :ocostatus %>
+  </div>
+  <div class="field">
+    <%= f.label :ocomunicipio %><br>
+    <%= f.text_field :ocomunicipio %>
+  </div>
+  <div class="field">
+    <%= f.label :ocosentido %><br>
+    <%= f.text_field :ocosentido %>
+  </div>
+  <div class="field">
+    <%= f.label :ocodataocorrencia %><br>
+    <%= f.date_select :ocodataocorrencia %>
+  </div>
+  <div class="field">
+    <%= f.label :ocodataregistro %><br>
+    <%= f.date_select :ocodataregistro %>
+  </div>
+  <div class="field">
+    <%= f.label :ocotipo %><br>
+    <%= f.text_field :ocotipo %>
+  </div>
+  <div class="field">
+    <%= f.label :ococomid %><br>
+    <%= f.number_field :ococomid %>
+  </div>
+  <div class="field">
+    <%= f.label :ocoidorigem %><br>
+    <%= f.number_field :ocoidorigem %>
+  </div>
+  <div class="field">
+    <%= f.label :ococpfretif %><br>
+    <%= f.text_field :ococpfretif %>
+  </div>
+  <div class="field">
+    <%= f.label :ococpfretif %><br>
+    <%= f.date_select :ococpfretif %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
