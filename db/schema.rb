@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131002003318) do
+ActiveRecord::Schema.define(version: 20131015125405) do
 
   create_table "ocorrencias", force: true do |t|
     t.integer  "ocolocal"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20131002003318) do
     t.date     "ococpfretif"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "ocoid"
   end
 
 end
