@@ -1,0 +1,33 @@
+<%= form_for(@tiporeceptor) do |f| %>
+  <% if @tiporeceptor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tiporeceptor.errors.count, "error") %> prohibited this tiporeceptor from being saved:</h2>
+
+      <ul>
+      <% @tiporeceptor.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ttrcodigo %><br>
+    <%= f.number_field :ttrcodigo %>
+  </div>
+  <div class="field">
+    <%= f.label :ttrdescricao %><br>
+    <%= f.text_area :ttrdescricao %>
+  </div>
+  <div class="field">
+    <%= f.label :ttratualiza %><br>
+    <%= f.text_field :ttratualiza %>
+  </div>
+  <div class="field">
+    <%= f.label :ttrdelegacia %><br>
+    <%= f.text_field :ttrdelegacia %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

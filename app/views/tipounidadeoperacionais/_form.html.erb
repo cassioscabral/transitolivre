@@ -1,0 +1,29 @@
+<%= form_for(@tipounidadeoperacional) do |f| %>
+  <% if @tipounidadeoperacional.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tipounidadeoperacional.errors.count, "error") %> prohibited this tipounidadeoperacional from being saved:</h2>
+
+      <ul>
+      <% @tipounidadeoperacional.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ttucodigo %><br>
+    <%= f.number_field :ttucodigo %>
+  </div>
+  <div class="field">
+    <%= f.label :ttudescricao %><br>
+    <%= f.text_area :ttudescricao %>
+  </div>
+  <div class="field">
+    <%= f.label :ttuatualiza %><br>
+    <%= f.text_field :ttuatualiza %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

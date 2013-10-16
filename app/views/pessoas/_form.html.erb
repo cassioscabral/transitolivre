@@ -1,0 +1,177 @@
+<%= form_for(@pessoa) do |f| %>
+  <% if @pessoa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pessoa.errors.count, "error") %> prohibited this pessoa from being saved:</h2>
+
+      <ul>
+      <% @pessoa.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pesid %><br>
+    <%= f.number_field :pesid %>
+  </div>
+  <div class="field">
+    <%= f.label :pesufexpedidora %><br>
+    <%= f.text_field :pesufexpedidora %>
+  </div>
+  <div class="field">
+    <%= f.label :pesnaturalidade %><br>
+    <%= f.text_field :pesnaturalidade %>
+  </div>
+  <div class="field">
+    <%= f.label :pesnacionalidade %><br>
+    <%= f.number_field :pesnacionalidade %>
+  </div>
+  <div class="field">
+    <%= f.label :pessexo %><br>
+    <%= f.text_field :pessexo %>
+  </div>
+  <div class="field">
+    <%= f.label :pestgicodigo %><br>
+    <%= f.number_field :pestgicodigo %>
+  </div>
+  <div class="field">
+    <%= f.label :pestopcodigo %><br>
+    <%= f.number_field :pestopcodigo %>
+  </div>
+  <div class="field">
+    <%= f.label :pesmunicipioori %><br>
+    <%= f.text_field :pesmunicipioori %>
+  </div>
+  <div class="field">
+    <%= f.label :pespaisori %><br>
+    <%= f.number_field :pespaisori %>
+  </div>
+  <div class="field">
+    <%= f.label :pesmunicipiodest %><br>
+    <%= f.text_field :pesmunicipiodest %>
+  </div>
+  <div class="field">
+    <%= f.label :pesveiid %><br>
+    <%= f.number_field :pesveiid %>
+  </div>
+  <div class="field">
+    <%= f.label :pescinto %><br>
+    <%= f.text_field :pescinto %>
+  </div>
+  <div class="field">
+    <%= f.label :pescapacete %><br>
+    <%= f.text_field :pescapacete %>
+  </div>
+  <div class="field">
+    <%= f.label :peshabilitado %><br>
+    <%= f.text_field :peshabilitado %>
+  </div>
+  <div class="field">
+    <%= f.label :pessocorrido %><br>
+    <%= f.text_field :pessocorrido %>
+  </div>
+  <div class="field">
+    <%= f.label :pesdormindo %><br>
+    <%= f.text_field :pesdormindo %>
+  </div>
+  <div class="field">
+    <%= f.label :pesalcool %><br>
+    <%= f.text_field :pesalcool %>
+  </div>
+  <div class="field">
+    <%= f.label :peskmpercorre %><br>
+    <%= f.text_field :peskmpercorre %>
+  </div>
+  <div class="field">
+    <%= f.label :peshorapercorre %><br>
+    <%= f.text_field :peshorapercorre %>
+  </div>
+  <div class="field">
+    <%= f.label :pescategcnh %><br>
+    <%= f.text_field :pescategcnh %>
+  </div>
+  <div class="field">
+    <%= f.label :pesdatahabil %><br>
+    <%= f.date_select :pesdatahabil %>
+  </div>
+  <div class="field">
+    <%= f.label :pesdatavalidade %><br>
+    <%= f.date_select :pesdatavalidade %>
+  </div>
+  <div class="field">
+    <%= f.label :pesapelido %><br>
+    <%= f.text_field :pesapelido %>
+  </div>
+  <div class="field">
+    <%= f.label :pesidade %><br>
+    <%= f.number_field :pesidade %>
+  </div>
+  <div class="field">
+    <%= f.label :pesaltura %><br>
+    <%= f.text_field :pesaltura %>
+  </div>
+  <div class="field">
+    <%= f.label :pespeso %><br>
+    <%= f.number_field :pespeso %>
+  </div>
+  <div class="field">
+    <%= f.label :pescicatriz %><br>
+    <%= f.text_field :pescicatriz %>
+  </div>
+  <div class="field">
+    <%= f.label :pestatuagem %><br>
+    <%= f.text_field :pestatuagem %>
+  </div>
+  <div class="field">
+    <%= f.label :pessinal %><br>
+    <%= f.text_field :pessinal %>
+  </div>
+  <div class="field">
+    <%= f.label :peslesao %><br>
+    <%= f.text_field :peslesao %>
+  </div>
+  <div class="field">
+    <%= f.label :pestcccodigo %><br>
+    <%= f.number_field :pestcccodigo %>
+  </div>
+  <div class="field">
+    <%= f.label :pestctcodigo %><br>
+    <%= f.number_field :pestctcodigo %>
+  </div>
+  <div class="field">
+    <%= f.label :pestctcodigo %><br>
+    <%= f.number_field :pestctcodigo %>
+  </div>
+  <div class="field">
+    <%= f.label :pespertences %><br>
+    <%= f.text_area :pespertences %>
+  </div>
+  <div class="field">
+    <%= f.label :pesdadoscomplement %><br>
+    <%= f.text_area :pesdadoscomplement %>
+  </div>
+  <div class="field">
+    <%= f.label :pesoenid %><br>
+    <%= f.number_field :pesoenid %>
+  </div>
+  <div class="field">
+    <%= f.label :vestigios_drogas %><br>
+    <%= f.text_field :vestigios_drogas %>
+  </div>
+  <div class="field">
+    <%= f.label :descricao_cicatriz %><br>
+    <%= f.text_area :descricao_cicatriz %>
+  </div>
+  <div class="field">
+    <%= f.label :descricao_sinal %><br>
+    <%= f.text_area :descricao_sinal %>
+  </div>
+  <div class="field">
+    <%= f.label :descricao_deficiencia %><br>
+    <%= f.text_area :descricao_deficiencia %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

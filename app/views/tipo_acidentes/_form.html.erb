@@ -1,0 +1,29 @@
+<%= form_for(@tipo_acidente) do |f| %>
+  <% if @tipo_acidente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tipo_acidente.errors.count, "error") %> prohibited this tipo_acidente from being saved:</h2>
+
+      <ul>
+      <% @tipo_acidente.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ttacodigo %><br>
+    <%= f.number_field :ttacodigo %>
+  </div>
+  <div class="field">
+    <%= f.label :ttaatualiza %><br>
+    <%= f.text_field :ttaatualiza %>
+  </div>
+  <div class="field">
+    <%= f.label :ttaativo %><br>
+    <%= f.text_field :ttaativo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

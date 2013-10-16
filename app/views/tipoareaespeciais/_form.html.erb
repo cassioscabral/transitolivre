@@ -1,0 +1,29 @@
+<%= form_for(@tipoareaespecial) do |f| %>
+  <% if @tipoareaespecial.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tipoareaespecial.errors.count, "error") %> prohibited this tipoareaespecial from being saved:</h2>
+
+      <ul>
+      <% @tipoareaespecial.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :taecodigo %><br>
+    <%= f.number_field :taecodigo %>
+  </div>
+  <div class="field">
+    <%= f.label :taedescricao %><br>
+    <%= f.text_area :taedescricao %>
+  </div>
+  <div class="field">
+    <%= f.label :taeatualiza %><br>
+    <%= f.text_field :taeatualiza %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

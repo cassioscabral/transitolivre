@@ -1,0 +1,105 @@
+<h1>Listing pessoas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pesid</th>
+      <th>Pesufexpedidora</th>
+      <th>Pesnaturalidade</th>
+      <th>Pesnacionalidade</th>
+      <th>Pessexo</th>
+      <th>Pestgicodigo</th>
+      <th>Pestopcodigo</th>
+      <th>Pesmunicipioori</th>
+      <th>Pespaisori</th>
+      <th>Pesmunicipiodest</th>
+      <th>Pesveiid</th>
+      <th>Pescinto</th>
+      <th>Pescapacete</th>
+      <th>Peshabilitado</th>
+      <th>Pessocorrido</th>
+      <th>Pesdormindo</th>
+      <th>Pesalcool</th>
+      <th>Peskmpercorre</th>
+      <th>Peshorapercorre</th>
+      <th>Pescategcnh</th>
+      <th>Pesdatahabil</th>
+      <th>Pesdatavalidade</th>
+      <th>Pesapelido</th>
+      <th>Pesidade</th>
+      <th>Pesaltura</th>
+      <th>Pespeso</th>
+      <th>Pescicatriz</th>
+      <th>Pestatuagem</th>
+      <th>Pessinal</th>
+      <th>Peslesao</th>
+      <th>Pestcccodigo</th>
+      <th>Pestctcodigo</th>
+      <th>Pestctcodigo</th>
+      <th>Pespertences</th>
+      <th>Pesdadoscomplement</th>
+      <th>Pesoenid</th>
+      <th>Vestigios drogas</th>
+      <th>Descricao cicatriz</th>
+      <th>Descricao sinal</th>
+      <th>Descricao deficiencia</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pessoas.each do |pessoa| %>
+      <tr>
+        <td><%= pessoa.pesid %></td>
+        <td><%= pessoa.pesufexpedidora %></td>
+        <td><%= pessoa.pesnaturalidade %></td>
+        <td><%= pessoa.pesnacionalidade %></td>
+        <td><%= pessoa.pessexo %></td>
+        <td><%= pessoa.pestgicodigo %></td>
+        <td><%= pessoa.pestopcodigo %></td>
+        <td><%= pessoa.pesmunicipioori %></td>
+        <td><%= pessoa.pespaisori %></td>
+        <td><%= pessoa.pesmunicipiodest %></td>
+        <td><%= pessoa.pesveiid %></td>
+        <td><%= pessoa.pescinto %></td>
+        <td><%= pessoa.pescapacete %></td>
+        <td><%= pessoa.peshabilitado %></td>
+        <td><%= pessoa.pessocorrido %></td>
+        <td><%= pessoa.pesdormindo %></td>
+        <td><%= pessoa.pesalcool %></td>
+        <td><%= pessoa.peskmpercorre %></td>
+        <td><%= pessoa.peshorapercorre %></td>
+        <td><%= pessoa.pescategcnh %></td>
+        <td><%= pessoa.pesdatahabil %></td>
+        <td><%= pessoa.pesdatavalidade %></td>
+        <td><%= pessoa.pesapelido %></td>
+        <td><%= pessoa.pesidade %></td>
+        <td><%= pessoa.pesaltura %></td>
+        <td><%= pessoa.pespeso %></td>
+        <td><%= pessoa.pescicatriz %></td>
+        <td><%= pessoa.pestatuagem %></td>
+        <td><%= pessoa.pessinal %></td>
+        <td><%= pessoa.peslesao %></td>
+        <td><%= pessoa.pestcccodigo %></td>
+        <td><%= pessoa.pestctcodigo %></td>
+        <td><%= pessoa.pestctcodigo %></td>
+        <td><%= pessoa.pespertences %></td>
+        <td><%= pessoa.pesdadoscomplement %></td>
+        <td><%= pessoa.pesoenid %></td>
+        <td><%= pessoa.vestigios_drogas %></td>
+        <td><%= pessoa.descricao_cicatriz %></td>
+        <td><%= pessoa.descricao_sinal %></td>
+        <td><%= pessoa.descricao_deficiencia %></td>
+        <td><%= link_to 'Show', pessoa %></td>
+        <td><%= link_to 'Edit', edit_pessoa_path(pessoa) %></td>
+        <td><%= link_to 'Destroy', pessoa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pessoa', new_pessoa_path %>

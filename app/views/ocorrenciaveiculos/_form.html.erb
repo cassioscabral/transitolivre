@@ -1,0 +1,29 @@
+<%= form_for(@ocorrenciaveiculo) do |f| %>
+  <% if @ocorrenciaveiculo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ocorrenciaveiculo.errors.count, "error") %> prohibited this ocorrenciaveiculo from being saved:</h2>
+
+      <ul>
+      <% @ocorrenciaveiculo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ocvid %><br>
+    <%= f.number_field :ocvid %>
+  </div>
+  <div class="field">
+    <%= f.label :ocvocoid %><br>
+    <%= f.number_field :ocvocoid %>
+  </div>
+  <div class="field">
+    <%= f.label :ocvveiid %><br>
+    <%= f.number_field :ocvveiid %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

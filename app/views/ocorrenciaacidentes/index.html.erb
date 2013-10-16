@@ -1,0 +1,87 @@
+<h1>Listing ocorrenciaacidentes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Oacocoid</th>
+      <th>Oacttacodigo</th>
+      <th>Oactcacodigo</th>
+      <th>Oacdano</th>
+      <th>Oacdanoterc</th>
+      <th>Oacdanoamb</th>
+      <th>Oaclatitude</th>
+      <th>Oaclongitude</th>
+      <th>Oacrefera</th>
+      <th>Oacreferb</th>
+      <th>Oacdistab</th>
+      <th>Oacdistac</th>
+      <th>Oacdistbc</th>
+      <th>Oacmodelopista</th>
+      <th>Oacsentido1</th>
+      <th>Oacsentido2</th>
+      <th>Oacqtdfaixa1</th>
+      <th>Oacqtdfaixa2</th>
+      <th>Oacacostamento1</th>
+      <th>Oacacostamento2</th>
+      <th>Oacimagemlen</th>
+      <th>Oacimagem</th>
+      <th>Oacdescdanopat</th>
+      <th>Oacdescdanoterc</th>
+      <th>Oacdescdanoamb</th>
+      <th>Oaccanteiro</th>
+      <th>Oaccanteiro</th>
+      <th>Oacorientpista</th>
+      <th>Oacgirafundo</th>
+      <th>Oacversaocroqui</th>
+      <th>Oacsitio</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ocorrenciaacidentes.each do |ocorrenciaacidente| %>
+      <tr>
+        <td><%= ocorrenciaacidente.oacocoid %></td>
+        <td><%= ocorrenciaacidente.oacttacodigo %></td>
+        <td><%= ocorrenciaacidente.oactcacodigo %></td>
+        <td><%= ocorrenciaacidente.oacdano %></td>
+        <td><%= ocorrenciaacidente.oacdanoterc %></td>
+        <td><%= ocorrenciaacidente.oacdanoamb %></td>
+        <td><%= ocorrenciaacidente.oaclatitude %></td>
+        <td><%= ocorrenciaacidente.oaclongitude %></td>
+        <td><%= ocorrenciaacidente.oacrefera %></td>
+        <td><%= ocorrenciaacidente.oacreferb %></td>
+        <td><%= ocorrenciaacidente.oacdistab %></td>
+        <td><%= ocorrenciaacidente.oacdistac %></td>
+        <td><%= ocorrenciaacidente.oacdistbc %></td>
+        <td><%= ocorrenciaacidente.oacmodelopista %></td>
+        <td><%= ocorrenciaacidente.oacsentido1 %></td>
+        <td><%= ocorrenciaacidente.oacsentido2 %></td>
+        <td><%= ocorrenciaacidente.oacqtdfaixa1 %></td>
+        <td><%= ocorrenciaacidente.oacqtdfaixa2 %></td>
+        <td><%= ocorrenciaacidente.oacacostamento1 %></td>
+        <td><%= ocorrenciaacidente.oacacostamento2 %></td>
+        <td><%= ocorrenciaacidente.oacimagemlen %></td>
+        <td><%= ocorrenciaacidente.oacimagem %></td>
+        <td><%= ocorrenciaacidente.oacdescdanopat %></td>
+        <td><%= ocorrenciaacidente.oacdescdanoterc %></td>
+        <td><%= ocorrenciaacidente.oacdescdanoamb %></td>
+        <td><%= ocorrenciaacidente.oaccanteiro %></td>
+        <td><%= ocorrenciaacidente.oaccanteiro %></td>
+        <td><%= ocorrenciaacidente.oacorientpista %></td>
+        <td><%= ocorrenciaacidente.oacgirafundo %></td>
+        <td><%= ocorrenciaacidente.oacversaocroqui %></td>
+        <td><%= ocorrenciaacidente.oacsitio %></td>
+        <td><%= link_to 'Show', ocorrenciaacidente %></td>
+        <td><%= link_to 'Edit', edit_ocorrenciaacidente_path(ocorrenciaacidente) %></td>
+        <td><%= link_to 'Destroy', ocorrenciaacidente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ocorrenciaacidente', new_ocorrenciaacidente_path %>

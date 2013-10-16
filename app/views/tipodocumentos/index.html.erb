@@ -1,0 +1,35 @@
+<h1>Listing tipodocumentos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ttocodigo</th>
+      <th>Ttodescricao</th>
+      <th>Ttoatualiza</th>
+      <th>Ttorelapreensao</th>
+      <th>Ttorelrecuperacao</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tipodocumentos.each do |tipodocumento| %>
+      <tr>
+        <td><%= tipodocumento.ttocodigo %></td>
+        <td><%= tipodocumento.ttodescricao %></td>
+        <td><%= tipodocumento.ttoatualiza %></td>
+        <td><%= tipodocumento.ttorelapreensao %></td>
+        <td><%= tipodocumento.ttorelrecuperacao %></td>
+        <td><%= link_to 'Show', tipodocumento %></td>
+        <td><%= link_to 'Edit', edit_tipodocumento_path(tipodocumento) %></td>
+        <td><%= link_to 'Destroy', tipodocumento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tipodocumento', new_tipodocumento_path %>

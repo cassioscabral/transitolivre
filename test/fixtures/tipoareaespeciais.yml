@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  taecodigo: 1
+  taedescricao: MyText
+  taeatualiza: MyString
+
+two:
+  taecodigo: 1
+  taedescricao: MyText
+  taeatualiza: MyString

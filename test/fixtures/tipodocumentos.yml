@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ttocodigo: 1
+  ttodescricao: MyText
+  ttoatualiza: MyString
+  ttorelapreensao: MyString
+  ttorelrecuperacao: MyString
+
+two:
+  ttocodigo: 1
+  ttodescricao: MyText
+  ttoatualiza: MyString
+  ttorelapreensao: MyString
+  ttorelrecuperacao: MyString

@@ -1,0 +1,65 @@
+<%= form_for(@unidadeoperacional) do |f| %>
+  <% if @unidadeoperacional.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@unidadeoperacional.errors.count, "error") %> prohibited this unidadeoperacional from being saved:</h2>
+
+      <ul>
+      <% @unidadeoperacional.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :uniid %><br>
+    <%= f.number_field :uniid %>
+  </div>
+  <div class="field">
+    <%= f.label :uniunidade %><br>
+    <%= f.text_field :uniunidade %>
+  </div>
+  <div class="field">
+    <%= f.label :unilotacao %><br>
+    <%= f.text_field :unilotacao %>
+  </div>
+  <div class="field">
+    <%= f.label :unisigla %><br>
+    <%= f.text_field :unisigla %>
+  </div>
+  <div class="field">
+    <%= f.label :unittucodigo %><br>
+    <%= f.number_field :unittucodigo %>
+  </div>
+  <div class="field">
+    <%= f.label :uniunidaderesponsavel %><br>
+    <%= f.number_field :uniunidaderesponsavel %>
+  </div>
+  <div class="field">
+    <%= f.label :unidenominacao %><br>
+    <%= f.text_field :unidenominacao %>
+  </div>
+  <div class="field">
+    <%= f.label :unimunicipio %><br>
+    <%= f.text_field :unimunicipio %>
+  </div>
+  <div class="field">
+    <%= f.label :unilocal %><br>
+    <%= f.number_field :unilocal %>
+  </div>
+  <div class="field">
+    <%= f.label :unilatitude %><br>
+    <%= f.text_field :unilatitude %>
+  </div>
+  <div class="field">
+    <%= f.label :unilongitude %><br>
+    <%= f.text_field :unilongitude %>
+  </div>
+  <div class="field">
+    <%= f.label :unihelicoptero %><br>
+    <%= f.text_field :unihelicoptero %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

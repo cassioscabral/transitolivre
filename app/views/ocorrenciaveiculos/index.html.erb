@@ -1,0 +1,31 @@
+<h1>Listing ocorrenciaveiculos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ocvid</th>
+      <th>Ocvocoid</th>
+      <th>Ocvveiid</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ocorrenciaveiculos.each do |ocorrenciaveiculo| %>
+      <tr>
+        <td><%= ocorrenciaveiculo.ocvid %></td>
+        <td><%= ocorrenciaveiculo.ocvocoid %></td>
+        <td><%= ocorrenciaveiculo.ocvveiid %></td>
+        <td><%= link_to 'Show', ocorrenciaveiculo %></td>
+        <td><%= link_to 'Edit', edit_ocorrenciaveiculo_path(ocorrenciaveiculo) %></td>
+        <td><%= link_to 'Destroy', ocorrenciaveiculo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ocorrenciaveiculo', new_ocorrenciaveiculo_path %>

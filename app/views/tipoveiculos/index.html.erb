@@ -1,0 +1,31 @@
+<h1>Listing tipoveiculos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tvvcodigo</th>
+      <th>Tvvatualiza</th>
+      <th>Tvvativo</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tipoveiculos.each do |tipoveiculo| %>
+      <tr>
+        <td><%= tipoveiculo.tvvcodigo %></td>
+        <td><%= tipoveiculo.tvvatualiza %></td>
+        <td><%= tipoveiculo.tvvativo %></td>
+        <td><%= link_to 'Show', tipoveiculo %></td>
+        <td><%= link_to 'Edit', edit_tipoveiculo_path(tipoveiculo) %></td>
+        <td><%= link_to 'Destroy', tipoveiculo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tipoveiculo', new_tipoveiculo_path %>

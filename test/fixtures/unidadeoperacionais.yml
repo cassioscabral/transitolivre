@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  uniid: 1
+  uniunidade: MyString
+  unilotacao: MyString
+  unisigla: MyString
+  unittucodigo: 1
+  uniunidaderesponsavel: 1
+  unidenominacao: MyString
+  unimunicipio: MyString
+  unilocal: 1
+  unilatitude: MyString
+  unilongitude: MyString
+  unihelicoptero: MyString
+
+two:
+  uniid: 1
+  uniunidade: MyString
+  unilotacao: MyString
+  unisigla: MyString
+  unittucodigo: 1
+  uniunidaderesponsavel: 1
+  unidenominacao: MyString
+  unimunicipio: MyString
+  unilocal: 1
+  unilatitude: MyString
+  unilongitude: MyString
+  unihelicoptero: MyString

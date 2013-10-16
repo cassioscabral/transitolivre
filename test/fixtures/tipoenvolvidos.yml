@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ttecodigo: 1
+  tteatualiza: MyString
+  tteativo: MyString
+
+two:
+  ttecodigo: 1
+  tteatualiza: MyString
+  tteativo: MyString

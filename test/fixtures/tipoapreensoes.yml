@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ttpcodigo: 1
+  ttpatualiza: MyString
+
+two:
+  ttpcodigo: 1
+  ttpatualiza: MyString

@@ -1,0 +1,2 @@
+module TiporeceptoresHelper
+end

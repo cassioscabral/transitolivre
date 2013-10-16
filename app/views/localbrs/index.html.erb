@@ -1,0 +1,41 @@
+<h1>Listing localbrs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lbrid</th>
+      <th>Lbruf</th>
+      <th>Lbrbr</th>
+      <th>Lbrkm</th>
+      <th>Lbrlatitude</th>
+      <th>Lbrlatitude</th>
+      <th>Lbrpnvid</th>
+      <th>Lbratualiza</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @localbrs.each do |localbr| %>
+      <tr>
+        <td><%= localbr.lbrid %></td>
+        <td><%= localbr.lbruf %></td>
+        <td><%= localbr.lbrbr %></td>
+        <td><%= localbr.lbrkm %></td>
+        <td><%= localbr.lbrlatitude %></td>
+        <td><%= localbr.lbrlatitude %></td>
+        <td><%= localbr.lbrpnvid %></td>
+        <td><%= localbr.lbratualiza %></td>
+        <td><%= link_to 'Show', localbr %></td>
+        <td><%= link_to 'Edit', edit_localbr_path(localbr) %></td>
+        <td><%= link_to 'Destroy', localbr, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Localbr', new_localbr_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ttdcodigo: 1
+  ttddescricao: MyText
+  ttdatualiza: MyString
+  ttdrelacidente: MyString
+
+two:
+  ttdcodigo: 1
+  ttddescricao: MyText
+  ttdatualiza: MyString
+  ttdrelacidente: MyString

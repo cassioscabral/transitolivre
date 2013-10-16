@@ -1,0 +1,49 @@
+<h1>Listing unidadeoperacionais</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Uniid</th>
+      <th>Uniunidade</th>
+      <th>Unilotacao</th>
+      <th>Unisigla</th>
+      <th>Unittucodigo</th>
+      <th>Uniunidaderesponsavel</th>
+      <th>Unidenominacao</th>
+      <th>Unimunicipio</th>
+      <th>Unilocal</th>
+      <th>Unilatitude</th>
+      <th>Unilongitude</th>
+      <th>Unihelicoptero</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @unidadeoperacionais.each do |unidadeoperacional| %>
+      <tr>
+        <td><%= unidadeoperacional.uniid %></td>
+        <td><%= unidadeoperacional.uniunidade %></td>
+        <td><%= unidadeoperacional.unilotacao %></td>
+        <td><%= unidadeoperacional.unisigla %></td>
+        <td><%= unidadeoperacional.unittucodigo %></td>
+        <td><%= unidadeoperacional.uniunidaderesponsavel %></td>
+        <td><%= unidadeoperacional.unidenominacao %></td>
+        <td><%= unidadeoperacional.unimunicipio %></td>
+        <td><%= unidadeoperacional.unilocal %></td>
+        <td><%= unidadeoperacional.unilatitude %></td>
+        <td><%= unidadeoperacional.unilongitude %></td>
+        <td><%= unidadeoperacional.unihelicoptero %></td>
+        <td><%= link_to 'Show', unidadeoperacional %></td>
+        <td><%= link_to 'Edit', edit_unidadeoperacional_path(unidadeoperacional) %></td>
+        <td><%= link_to 'Destroy', unidadeoperacional, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Unidadeoperacional', new_unidadeoperacional_path %>

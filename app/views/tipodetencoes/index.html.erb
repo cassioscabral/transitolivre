@@ -1,0 +1,33 @@
+<h1>Listing tipodetencoes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ttdcodigo</th>
+      <th>Ttddescricao</th>
+      <th>Ttdatualiza</th>
+      <th>Ttdrelacidente</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tipodetencoes.each do |tipodetencao| %>
+      <tr>
+        <td><%= tipodetencao.ttdcodigo %></td>
+        <td><%= tipodetencao.ttddescricao %></td>
+        <td><%= tipodetencao.ttdatualiza %></td>
+        <td><%= tipodetencao.ttdrelacidente %></td>
+        <td><%= link_to 'Show', tipodetencao %></td>
+        <td><%= link_to 'Edit', edit_tipodetencao_path(tipodetencao) %></td>
+        <td><%= link_to 'Destroy', tipodetencao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tipodetencao', new_tipodetencao_path %>

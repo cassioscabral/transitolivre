@@ -1,4 +1,34 @@
 Dadosabertos::Application.routes.draw do
+  resources :ufs
+
+  resources :localbrs
+
+  resources :pessoas
+
+  resources :ocorrenciaveiculos
+
+  resources :unidadeoperacionais
+
+  resources :tipoveiculos
+
+  resources :tipounidadeoperacionais
+
+  resources :tiporeceptores
+
+  resources :tipoenvolvidos
+
+  resources :tipodocumentos
+
+  resources :tipodetencoes
+
+  resources :tipoareaespeciais
+
+  resources :tipoapreensoes
+
+  resources :tipo_acidentes
+
+  resources :ocorrenciaacidentes
+
   resources :ocorrencias
 
   # The priority is based upon order of creation: first created -> highest priority.

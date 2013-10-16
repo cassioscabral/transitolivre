@@ -1,0 +1,33 @@
+<%= form_for(@tipodetencao) do |f| %>
+  <% if @tipodetencao.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tipodetencao.errors.count, "error") %> prohibited this tipodetencao from being saved:</h2>
+
+      <ul>
+      <% @tipodetencao.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ttdcodigo %><br>
+    <%= f.number_field :ttdcodigo %>
+  </div>
+  <div class="field">
+    <%= f.label :ttddescricao %><br>
+    <%= f.text_area :ttddescricao %>
+  </div>
+  <div class="field">
+    <%= f.label :ttdatualiza %><br>
+    <%= f.text_field :ttdatualiza %>
+  </div>
+  <div class="field">
+    <%= f.label :ttdrelacidente %><br>
+    <%= f.text_field :ttdrelacidente %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

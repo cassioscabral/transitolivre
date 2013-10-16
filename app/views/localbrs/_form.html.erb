@@ -1,0 +1,49 @@
+<%= form_for(@localbr) do |f| %>
+  <% if @localbr.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@localbr.errors.count, "error") %> prohibited this localbr from being saved:</h2>
+
+      <ul>
+      <% @localbr.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :lbrid %><br>
+    <%= f.number_field :lbrid %>
+  </div>
+  <div class="field">
+    <%= f.label :lbruf %><br>
+    <%= f.text_field :lbruf %>
+  </div>
+  <div class="field">
+    <%= f.label :lbrbr %><br>
+    <%= f.text_field :lbrbr %>
+  </div>
+  <div class="field">
+    <%= f.label :lbrkm %><br>
+    <%= f.text_field :lbrkm %>
+  </div>
+  <div class="field">
+    <%= f.label :lbrlatitude %><br>
+    <%= f.text_field :lbrlatitude %>
+  </div>
+  <div class="field">
+    <%= f.label :lbrlatitude %><br>
+    <%= f.text_field :lbrlatitude %>
+  </div>
+  <div class="field">
+    <%= f.label :lbrpnvid %><br>
+    <%= f.text_field :lbrpnvid %>
+  </div>
+  <div class="field">
+    <%= f.label :lbratualiza %><br>
+    <%= f.text_field :lbratualiza %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

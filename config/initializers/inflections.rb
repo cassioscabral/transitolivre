@@ -16,4 +16,19 @@
 # end
 ActiveSupport::Inflector.inflections(:en) do |inflect|
 	inflect.irregular 'ocorrencia', 'ocorrencias'
+	inflect.irregular 'ocorrenciaacidente', 'ocorrenciaacidentes'
+	inflect.irregular 'tipo_acidente', 'tipo_acidentes'
+	inflect.irregular 'Tipoapreensao', 'Tipoapreensoes'
+	inflect.irregular 'Tipoareaespecial', 'Tipoareaespeciais'
+	inflect.irregular 'Tipodetencao', 'Tipodetencoes'
+	inflect.irregular 'Tipodocumento', 'Tipodocumentos'
+	inflect.irregular 'Tipoenvolvido', 'Tipoenvolvidos'
+	inflect.irregular 'Tiporeceptor', 'Tiporeceptores'
+	inflect.irregular 'Tipounidadeoperacional', 'Tipounidadeoperacionais'
+	inflect.irregular 'Tipoveiculo', 'Tipoveiculos'
+	inflect.irregular 'Unidadeoperacional', 'Unidadeoperacionais'
+	inflect.irregular 'Ocorrenciaveiculo', 'Ocorrenciaveiculos'
+	inflect.irregular 'Pessoa', 'Pessoas'
+	inflect.irregular 'Localbr', 'Localbrs'
+	inflect.irregular 'Uf', 'Ufs'
 end

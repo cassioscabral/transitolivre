@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  lbrid: 1
+  lbruf: MyString
+  lbrbr: MyString
+  lbrkm: MyString
+  lbrlatitude: MyString
+  lbrlatitude: MyString
+  lbrpnvid: MyString
+  lbratualiza: MyString
+
+two:
+  lbrid: 1
+  lbruf: MyString
+  lbrbr: MyString
+  lbrkm: MyString
+  lbrlatitude: MyString
+  lbrlatitude: MyString
+  lbrpnvid: MyString
+  lbratualiza: MyString

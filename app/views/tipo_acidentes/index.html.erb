@@ -1,0 +1,31 @@
+<h1>Listing tipo_acidentes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ttacodigo</th>
+      <th>Ttaatualiza</th>
+      <th>Ttaativo</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tipo_acidentes.each do |tipo_acidente| %>
+      <tr>
+        <td><%= tipo_acidente.ttacodigo %></td>
+        <td><%= tipo_acidente.ttaatualiza %></td>
+        <td><%= tipo_acidente.ttaativo %></td>
+        <td><%= link_to 'Show', tipo_acidente %></td>
+        <td><%= link_to 'Edit', edit_tipo_acidente_path(tipo_acidente) %></td>
+        <td><%= link_to 'Destroy', tipo_acidente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tipo acidente', new_tipo_acidente_path %>

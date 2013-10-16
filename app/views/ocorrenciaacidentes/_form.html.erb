@@ -1,0 +1,141 @@
+<%= form_for(@ocorrenciaacidente) do |f| %>
+  <% if @ocorrenciaacidente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ocorrenciaacidente.errors.count, "error") %> prohibited this ocorrenciaacidente from being saved:</h2>
+
+      <ul>
+      <% @ocorrenciaacidente.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :oacocoid %><br>
+    <%= f.number_field :oacocoid %>
+  </div>
+  <div class="field">
+    <%= f.label :oacttacodigo %><br>
+    <%= f.number_field :oacttacodigo %>
+  </div>
+  <div class="field">
+    <%= f.label :oactcacodigo %><br>
+    <%= f.number_field :oactcacodigo %>
+  </div>
+  <div class="field">
+    <%= f.label :oacdano %><br>
+    <%= f.text_field :oacdano %>
+  </div>
+  <div class="field">
+    <%= f.label :oacdanoterc %><br>
+    <%= f.text_field :oacdanoterc %>
+  </div>
+  <div class="field">
+    <%= f.label :oacdanoamb %><br>
+    <%= f.text_field :oacdanoamb %>
+  </div>
+  <div class="field">
+    <%= f.label :oaclatitude %><br>
+    <%= f.text_field :oaclatitude %>
+  </div>
+  <div class="field">
+    <%= f.label :oaclongitude %><br>
+    <%= f.text_field :oaclongitude %>
+  </div>
+  <div class="field">
+    <%= f.label :oacrefera %><br>
+    <%= f.text_field :oacrefera %>
+  </div>
+  <div class="field">
+    <%= f.label :oacreferb %><br>
+    <%= f.text_field :oacreferb %>
+  </div>
+  <div class="field">
+    <%= f.label :oacdistab %><br>
+    <%= f.text_field :oacdistab %>
+  </div>
+  <div class="field">
+    <%= f.label :oacdistac %><br>
+    <%= f.text_field :oacdistac %>
+  </div>
+  <div class="field">
+    <%= f.label :oacdistbc %><br>
+    <%= f.text_field :oacdistbc %>
+  </div>
+  <div class="field">
+    <%= f.label :oacmodelopista %><br>
+    <%= f.text_field :oacmodelopista %>
+  </div>
+  <div class="field">
+    <%= f.label :oacsentido1 %><br>
+    <%= f.text_field :oacsentido1 %>
+  </div>
+  <div class="field">
+    <%= f.label :oacsentido2 %><br>
+    <%= f.text_field :oacsentido2 %>
+  </div>
+  <div class="field">
+    <%= f.label :oacqtdfaixa1 %><br>
+    <%= f.number_field :oacqtdfaixa1 %>
+  </div>
+  <div class="field">
+    <%= f.label :oacqtdfaixa2 %><br>
+    <%= f.number_field :oacqtdfaixa2 %>
+  </div>
+  <div class="field">
+    <%= f.label :oacacostamento1 %><br>
+    <%= f.text_field :oacacostamento1 %>
+  </div>
+  <div class="field">
+    <%= f.label :oacacostamento2 %><br>
+    <%= f.text_field :oacacostamento2 %>
+  </div>
+  <div class="field">
+    <%= f.label :oacimagemlen %><br>
+    <%= f.number_field :oacimagemlen %>
+  </div>
+  <div class="field">
+    <%= f.label :oacimagem %><br>
+    <%= f.number_field :oacimagem %>
+  </div>
+  <div class="field">
+    <%= f.label :oacdescdanopat %><br>
+    <%= f.text_field :oacdescdanopat %>
+  </div>
+  <div class="field">
+    <%= f.label :oacdescdanoterc %><br>
+    <%= f.text_field :oacdescdanoterc %>
+  </div>
+  <div class="field">
+    <%= f.label :oacdescdanoamb %><br>
+    <%= f.text_field :oacdescdanoamb %>
+  </div>
+  <div class="field">
+    <%= f.label :oaccanteiro %><br>
+    <%= f.text_field :oaccanteiro %>
+  </div>
+  <div class="field">
+    <%= f.label :oaccanteiro %><br>
+    <%= f.number_field :oaccanteiro %>
+  </div>
+  <div class="field">
+    <%= f.label :oacorientpista %><br>
+    <%= f.text_field :oacorientpista %>
+  </div>
+  <div class="field">
+    <%= f.label :oacgirafundo %><br>
+    <%= f.text_field :oacgirafundo %>
+  </div>
+  <div class="field">
+    <%= f.label :oacversaocroqui %><br>
+    <%= f.text_field :oacversaocroqui %>
+  </div>
+  <div class="field">
+    <%= f.label :oacsitio %><br>
+    <%= f.number_field :oacsitio %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

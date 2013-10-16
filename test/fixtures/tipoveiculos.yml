@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  tvvcodigo: 1
+  tvvatualiza: MyString
+  tvvativo: MyString
+
+two:
+  tvvcodigo: 1
+  tvvatualiza: MyString
+  tvvativo: MyString

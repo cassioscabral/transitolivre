@@ -1,0 +1,31 @@
+<h1>Listing tipounidadeoperacionais</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ttucodigo</th>
+      <th>Ttudescricao</th>
+      <th>Ttuatualiza</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tipounidadeoperacionais.each do |tipounidadeoperacional| %>
+      <tr>
+        <td><%= tipounidadeoperacional.ttucodigo %></td>
+        <td><%= tipounidadeoperacional.ttudescricao %></td>
+        <td><%= tipounidadeoperacional.ttuatualiza %></td>
+        <td><%= link_to 'Show', tipounidadeoperacional %></td>
+        <td><%= link_to 'Edit', edit_tipounidadeoperacional_path(tipounidadeoperacional) %></td>
+        <td><%= link_to 'Destroy', tipounidadeoperacional, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tipounidadeoperacional', new_tipounidadeoperacional_path %>

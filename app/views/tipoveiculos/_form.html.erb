@@ -1,0 +1,29 @@
+<%= form_for(@tipoveiculo) do |f| %>
+  <% if @tipoveiculo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tipoveiculo.errors.count, "error") %> prohibited this tipoveiculo from being saved:</h2>
+
+      <ul>
+      <% @tipoveiculo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tvvcodigo %><br>
+    <%= f.number_field :tvvcodigo %>
+  </div>
+  <div class="field">
+    <%= f.label :tvvatualiza %><br>
+    <%= f.text_field :tvvatualiza %>
+  </div>
+  <div class="field">
+    <%= f.label :tvvativo %><br>
+    <%= f.text_field :tvvativo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,31 @@
+<h1>Listing tipoareaespeciais</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Taecodigo</th>
+      <th>Taedescricao</th>
+      <th>Taeatualiza</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tipoareaespeciais.each do |tipoareaespecial| %>
+      <tr>
+        <td><%= tipoareaespecial.taecodigo %></td>
+        <td><%= tipoareaespecial.taedescricao %></td>
+        <td><%= tipoareaespecial.taeatualiza %></td>
+        <td><%= link_to 'Show', tipoareaespecial %></td>
+        <td><%= link_to 'Edit', edit_tipoareaespecial_path(tipoareaespecial) %></td>
+        <td><%= link_to 'Destroy', tipoareaespecial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tipoareaespecial', new_tipoareaespecial_path %>

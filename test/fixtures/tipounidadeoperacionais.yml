@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ttucodigo: 1
+  ttudescricao: MyText
+  ttuatualiza: MyString
+
+two:
+  ttucodigo: 1
+  ttudescricao: MyText
+  ttuatualiza: MyString

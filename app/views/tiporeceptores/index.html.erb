@@ -1,0 +1,33 @@
+<h1>Listing tiporeceptores</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ttrcodigo</th>
+      <th>Ttrdescricao</th>
+      <th>Ttratualiza</th>
+      <th>Ttrdelegacia</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tiporeceptores.each do |tiporeceptor| %>
+      <tr>
+        <td><%= tiporeceptor.ttrcodigo %></td>
+        <td><%= tiporeceptor.ttrdescricao %></td>
+        <td><%= tiporeceptor.ttratualiza %></td>
+        <td><%= tiporeceptor.ttrdelegacia %></td>
+        <td><%= link_to 'Show', tiporeceptor %></td>
+        <td><%= link_to 'Edit', edit_tiporeceptor_path(tiporeceptor) %></td>
+        <td><%= link_to 'Destroy', tiporeceptor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tiporeceptor', new_tiporeceptor_path %>

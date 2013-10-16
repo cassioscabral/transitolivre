@@ -1,0 +1,29 @@
+<h1>Listing tipoapreensoes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ttpcodigo</th>
+      <th>Ttpatualiza</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tipoapreensoes.each do |tipoapreensao| %>
+      <tr>
+        <td><%= tipoapreensao.ttpcodigo %></td>
+        <td><%= tipoapreensao.ttpatualiza %></td>
+        <td><%= link_to 'Show', tipoapreensao %></td>
+        <td><%= link_to 'Edit', edit_tipoapreensao_path(tipoapreensao) %></td>
+        <td><%= link_to 'Destroy', tipoapreensao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tipoapreensao', new_tipoapreensao_path %>

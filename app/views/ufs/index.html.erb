@@ -1,0 +1,29 @@
+<h1>Listing ufs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tufuf</th>
+      <th>Tufdenominacao</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ufs.each do |uf| %>
+      <tr>
+        <td><%= uf.tufuf %></td>
+        <td><%= uf.tufdenominacao %></td>
+        <td><%= link_to 'Show', uf %></td>
+        <td><%= link_to 'Edit', edit_uf_path(uf) %></td>
+        <td><%= link_to 'Destroy', uf, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Uf', new_uf_path %>

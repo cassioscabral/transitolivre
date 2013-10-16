@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ocvid: 1
+  ocvocoid: 1
+  ocvveiid: 1
+
+two:
+  ocvid: 1
+  ocvocoid: 1
+  ocvveiid: 1

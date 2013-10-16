@@ -1,0 +1,31 @@
+<h1>Listing tipoenvolvidos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ttecodigo</th>
+      <th>Tteatualiza</th>
+      <th>Tteativo</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tipoenvolvidos.each do |tipoenvolvido| %>
+      <tr>
+        <td><%= tipoenvolvido.ttecodigo %></td>
+        <td><%= tipoenvolvido.tteatualiza %></td>
+        <td><%= tipoenvolvido.tteativo %></td>
+        <td><%= link_to 'Show', tipoenvolvido %></td>
+        <td><%= link_to 'Edit', edit_tipoenvolvido_path(tipoenvolvido) %></td>
+        <td><%= link_to 'Destroy', tipoenvolvido, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tipoenvolvido', new_tipoenvolvido_path %>

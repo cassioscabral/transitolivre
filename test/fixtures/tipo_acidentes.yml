@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ttacodigo: 1
+  ttaatualiza: MyString
+  ttaativo: MyString
+
+two:
+  ttacodigo: 1
+  ttaatualiza: MyString
+  ttaativo: MyString

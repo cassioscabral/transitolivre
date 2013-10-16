@@ -1,0 +1,67 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  oacocoid: 1
+  oacttacodigo: 1
+  oactcacodigo: 1
+  oacdano: MyString
+  oacdanoterc: MyString
+  oacdanoamb: MyString
+  oaclatitude: MyString
+  oaclongitude: MyString
+  oacrefera: MyString
+  oacreferb: MyString
+  oacdistab: 9.99
+  oacdistac: 9.99
+  oacdistbc: 9.99
+  oacmodelopista: MyString
+  oacsentido1: MyString
+  oacsentido2: MyString
+  oacqtdfaixa1: 1
+  oacqtdfaixa2: 1
+  oacacostamento1: MyString
+  oacacostamento2: MyString
+  oacimagemlen: 1
+  oacimagem: 1
+  oacdescdanopat: MyString
+  oacdescdanoterc: MyString
+  oacdescdanoamb: MyString
+  oaccanteiro: MyString
+  oaccanteiro: 1
+  oacorientpista: MyString
+  oacgirafundo: MyString
+  oacversaocroqui: MyString
+  oacsitio: 1
+
+two:
+  oacocoid: 1
+  oacttacodigo: 1
+  oactcacodigo: 1
+  oacdano: MyString
+  oacdanoterc: MyString
+  oacdanoamb: MyString
+  oaclatitude: MyString
+  oaclongitude: MyString
+  oacrefera: MyString
+  oacreferb: MyString
+  oacdistab: 9.99
+  oacdistac: 9.99
+  oacdistbc: 9.99
+  oacmodelopista: MyString
+  oacsentido1: MyString
+  oacsentido2: MyString
+  oacqtdfaixa1: 1
+  oacqtdfaixa2: 1
+  oacacostamento1: MyString
+  oacacostamento2: MyString
+  oacimagemlen: 1
+  oacimagem: 1
+  oacdescdanopat: MyString
+  oacdescdanoterc: MyString
+  oacdescdanoamb: MyString
+  oaccanteiro: MyString
+  oaccanteiro: 1
+  oacorientpista: MyString
+  oacgirafundo: MyString
+  oacversaocroqui: MyString
+  oacsitio: 1
