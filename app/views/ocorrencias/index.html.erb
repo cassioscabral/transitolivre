@@ -45,3 +45,9 @@
 <br>
 
 <%= link_to 'New Ocorrencia', new_ocorrencia_path %>
+
+<h2>Import</h2>
+<%= form_tag import_ocorrencias_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>

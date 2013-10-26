@@ -39,3 +39,9 @@
 <br>
 
 <%= link_to 'New Localbr', new_localbr_path %>
+
+<h2>Import</h2>
+<%= form_tag import_localbrs_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>

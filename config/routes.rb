@@ -1,36 +1,16 @@
 Dadosabertos::Application.routes.draw do
   get "home/index"
-  resources :ufs
 
-  resources :localbrs
+  all_resources = [:ufs, :localbrs, :pessoas, :ocorrenciaveiculos, :unidadeoperacionais, :tipoveiculos, :tipounidadeoperacionais,
+   :tiporeceptores, :tipoenvolvidos, :tipodocumentos, :tipodocumentos,:tipodetencoes, :tipoareaespeciais, :tipoapreensoes, :tipo_acidentes, 
+   :ocorrenciaacidentes, :ocorrencias ]
 
-  resources :pessoas
+  all_resources.each do |resource|
+    resources resource do
+      collection { post :import}
+    end
+  end
 
-  resources :ocorrenciaveiculos
-
-  resources :unidadeoperacionais
-
-  resources :tipoveiculos
-
-  resources :tipounidadeoperacionais
-
-  resources :tiporeceptores
-
-  resources :tipoenvolvidos
-
-  resources :tipodocumentos
-
-  resources :tipodetencoes
-
-  resources :tipoareaespeciais
-
-  resources :tipoapreensoes
-
-  resources :tipo_acidentes
-
-  resources :ocorrenciaacidentes
-
-  resources :ocorrencias
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

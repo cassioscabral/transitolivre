@@ -1,10 +1,15 @@
 class LocalbrsController < ApplicationController
   before_action :set_localbr, only: [:show, :edit, :update, :destroy]
+  include Importable
 
   # GET /localbrs
   # GET /localbrs.json
   def index
     @localbrs = Localbr.all
+    respond_to do |format|
+      format.csv { send_data @localbrs.to_csv}
+      format.html
+    end
   end
 
   # GET /localbrs/1

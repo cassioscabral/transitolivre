@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131016180425) do
+ActiveRecord::Schema.define(version: 20131025215134) do
 
   create_table "localbrs", force: true do |t|
     t.integer  "lbrid"
@@ -74,6 +74,7 @@ ActiveRecord::Schema.define(version: 20131016180425) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "ocoid"
+    t.datetime "ocodatafim"
   end
 
   create_table "ocorrenciaveiculos", force: true do |t|

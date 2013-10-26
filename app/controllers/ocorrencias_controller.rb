@@ -1,10 +1,14 @@
 class OcorrenciasController < ApplicationController
   before_action :set_ocorrencia, only: [:show, :edit, :update, :destroy]
-
+  include Importable
   # GET /ocorrencias
   # GET /ocorrencias.json
   def index
     @ocorrencias = Ocorrencia.all
+    respond_to do |format|
+      format.csv { send_data @ocorrencias.to_csv}
+      format.html
+    end
   end
 
   # GET /ocorrencias/1
@@ -60,7 +64,10 @@ class OcorrenciasController < ApplicationController
       format.json { head :no_content }
     end
   end
-
+  def import
+      Ocorrencia.import(params[:file])
+      redirect_to root_url, notice: "File imported."
+    end
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_ocorrencia
